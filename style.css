@@ -99,7 +99,15 @@ p {
 
 
 
-
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: 30px 0;
+    border: 2px solid #E491C9;
+    border-radius: 6px;
+    overflow: hidden;
+}
 
 .video-container iframe {
     position: absolute;
