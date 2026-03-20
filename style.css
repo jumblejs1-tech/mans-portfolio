@@ -3,26 +3,25 @@ body {
     margin: 0;
     background-color: #F1E9E9;
     color: #15173D;
-    display: flex; /* Novieto navigāciju un galveno daļu blakus */
-    min-height: 100vh;
 }
 
 nav {
     background-color: #15173D;
-    width: 250px; /* Sānjoslas platums */
-    flex-shrink: 0;
+    padding: 0 20px; /* Pievieno atkāpi no kreisās malas visai joslai */
 }
 
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 20px 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Šis nobīda visu saturu uz kreiso pusi */
 }
 
 nav a {
     display: block;
     color: #F1E9E9;
-    padding: 15px 25px;
+    padding: 15px 20px;
     text-decoration: none;
 }
 
@@ -30,14 +29,25 @@ nav a:hover {
     background-color: #982598;
 }
 
+.dropdown {
+    position: relative;
+}
+
 .dropdown-content {
     display: none;
-    background-color: #1c1f4d; /* Nedaudz gaišāks zilais apakšizvēlnei */
+    position: absolute;
+    background-color: #F1E9E9;
+    min-width: 200px;
+    border: 1px solid #E491C9;
+    z-index: 10;
 }
 
 .dropdown-content a {
-    padding-left: 40px; /* Nobīde apakšizvēlnei */
-    font-size: 0.9rem;
+    color: #15173D;
+}
+
+.dropdown-content a:hover {
+    background-color: #E491C9;
 }
 
 .dropdown:hover .dropdown-content {
@@ -45,11 +55,11 @@ nav a:hover {
 }
 
 main {
-    flex-grow: 1; /* Aizpilda visu atlikušo vietu labajā pusē */
-    padding: 40px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
     background-color: #ffffff;
-    max-width: 900px;
-    margin: 0 auto; /* Nocentrē saturu baltajā laukumā */
+    border-top: 5px solid #982598;
 }
 
 h1 {
