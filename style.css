@@ -7,7 +7,7 @@ body {
 
 nav {
     background-color: #15173D;
-    padding: 0 20px; /* Pievieno atkāpi no kreisās malas visai joslai */
+    padding: 0 20px; 
 }
 
 nav ul {
@@ -15,7 +15,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-start; /* Šis nobīda visu saturu uz kreiso pusi */
+    justify-content: flex-start; 
 }
 
 nav a {
@@ -75,10 +75,10 @@ h2 {
 img {
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: 20px 0;
+    display: block;   
+    margin: 30px auto; 
+    border-radius: 5px;
 }
-
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
