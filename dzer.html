@@ -6,9 +6,9 @@
     <script>
         function maksa(){
             let dz = document.getElementsByName('drink');
-            for(i = 0; i < dz.length; i++) {
+            for(let i = 0; i < dz.length; i++) {
                 if(dz[i].checked)
-                    document.getElementById("poga").value=dz[i].value;
+                    document.getElementById("cena").innerHTML = dz[i].value;
             }
         }
     </script>
@@ -30,14 +30,10 @@
         &nbsp; 
         <label for="kakao">kakao</label>
         <br>
-        &nbsp; 
-        <input type="radio" id="ūdens" name="drink" value="0.95">
-        &nbsp; 
-        <label for="ūdnes">ūdens</label>
         <br>
-        <br>
-        <input type="button" id="poga" value="3.60" onclick="maksa()">
+        <input type="button" value="Jāmaksā:" onclick="maksa()"> <span id="cena"></span>
     </form>
+    <br>
     <a href="index.html">Sākums</a>
 </body>
 </html>
